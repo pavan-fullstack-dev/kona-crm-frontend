@@ -1,0 +1,43 @@
+<div style="background-color:#2c334d;height: 700px;" class="container-fluid">
+  
+    <button type="button" routerLink="/create-leads" class="float-right 
+    btn btn-warning btn-sm">Add Leads</button>
+    <p *ngIf="lead.length <= 0" class="no-data text-center">There is no employee added yet!</p>
+    <table style="color: white;" class="table" *ngIf="lead.length > 0">
+      <thead>
+        <tr style="background-color: #2c334d; color: white;">
+  
+          <th>Pid</th>
+          <th>Email</th>
+          <th>Phone No</th>
+          <th>Technology</th>
+          <th>Source</th>
+          <th>Update</th>
+         <!-- <th scope="col">Designation</th>-->
+        </tr>
+      </thead>
+      <tbody>
+        <tr  *ngFor="let employee of lead; let i = index">
+  
+              
+          <td>{{employee.pid}}</td>
+          <td>{{employee.emailId}}</td>
+          <td>{{employee.mobile}}</td>
+          <td>{{employee.technology}}</td>
+          <td>{{employee.source}}</td>
+          
+         
+          <td class="text-left edit-block">
+            <span class="edit">
+              <button type="button"  routerLink="/edit-leads" class="btn btn-success btn-sm">Edit</button>
+            </span>
+            <span class="delete" >
+              <button type="button" (click)="removeEmployee(employee,i)" class="btn btn-danger btn-sm">Delete</button>
+            </span>
+          </td>
+        </tr> 
+      </tbody>
+    </table>
+  </div>
+  
+  

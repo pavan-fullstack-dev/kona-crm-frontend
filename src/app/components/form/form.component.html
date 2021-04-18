@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 p-4 m-4">
+            <form (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" name="name" #name=ngModel ngModel class="form-control" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email address:</label>
+                  <input type="email" name="email" #email=ngModel ngModel class="form-control" placeholder="Enter email" >
+                </div>
+                <div class="form-group">
+                  <label for="mobile">Mobile:</label>
+                  <input type="tel" name="mobile" #mobile=ngModel ngModel class="form-control" placeholder="Enter mobile">
+                </div>
+                <div class="form-group">
+                  <label for="technology">Technology:</label>
+                  <input type="text" name="technology" #technology=ngModel ngModel class="form-control" placeholder="Enter technology">
+                </div>
+               
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
+</div> 
+
+  
+

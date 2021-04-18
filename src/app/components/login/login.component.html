@@ -1,0 +1,98 @@
+<body>
+    <div id="login">
+        <div id="text"class="name">Kona<span style="color: #E9204F;">digital.ai</span></div>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" method="post" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                            <div style="font-size: 30px;text-align: center;"class="login">Login</div>
+                            <!--<div class="txt_field">
+                                <input type="text" style="color: whitesmoke;" formControlName="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" placeholder="Username" required>
+                                <span></span>
+                                <label for=""></label>
+                                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                                    <div *ngIf="f.username.errors.required">Username is required</div>
+                                    <!-- <div *ngIf="f.username.errors.userExist">username is same</div> -->
+                               <!-- </div>
+                            </div>-->
+
+                            <div class="txt_field">
+                                <input type="email" style="color: whitesmoke;" formControlName="emailId" [ngClass]="{ 'is-invalid': submitted && f.emailId.errors }" placeholder="Email Id" required>
+                                <span></span>
+                                <label for=""></label>
+                                <div *ngIf="submitted && f.emailId.errors" class="invalid-feedback">
+                                    <div *ngIf="f.emailId.errors.required">Email Id is required</div>
+                                    <!-- <div *ngIf="f.username.errors.userExist">username is same</div> -->
+                                </div>
+                            </div>
+                         
+                            <div class="txt_field">
+                                <input type="password" style="color: whitesmoke;" formControlName="password"  [ngClass]="{ 'is-invalid': submitted && f.password.errors }" placeholder="Password" required>
+                                <span></span>
+                                <label for=""></label>
+                                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                    <div *ngIf="f.password.errors.required">Password is required</div>
+                                    <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+                                </div>
+                            </div>
+                          
+                            <input type="submit" value="Login">
+                           <div class="signup_link">     
+                               <p>Don't have an account?</p>
+                               <div>
+                                <a routerLink="/register">Register</a>
+                               </div> 
+                           </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+    
+
+
+
+<!--
+
+    <div id="login">
+    <div id="text"class="text-white text-center">Kona<span style="color: #E9204F;">digital.ai</span></div>
+    <div class="container">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+                    <form id="login-form" class="form" action="" method="post">
+                        <div style="font-size: 30px;"class="text-center text-info">Login</div>
+                        <div class="wrapper">
+                        <div class="form-group">
+                            <label for="username" class="text-info">Username:</label><br>
+                            <input class="input" placeholder="Please Enter Text" type="text" >
+                            <span class="underline"></span>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="text-info">Password:</label><br>
+                            <input type="text" name="password" id="password" class="form-control">
+                        </div><br>
+                        <div class="form-group">
+                        
+                            <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
+                        </div><br><br>
+                        <div id="register-link" class="text-right">
+                            <a routerLink='/register' class="text-info">Register here</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+
+

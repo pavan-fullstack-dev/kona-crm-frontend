@@ -1,0 +1,19 @@
+.nav-item{
+    font-size: 20px;
+    padding-left: 10px;
+    
+    
+}
+.nav-item:hover{
+    background-color: #E9204F4D;
+    border-radius: 10px;
+}
+.nav-link{
+    color: white;
+    
+}
+.navbar-brand{
+    font-style: CarosLight;
+    font-size: 25px;
+   
+}

@@ -1,0 +1,108 @@
+.col-sm-1{
+    background-color: #353e61;
+    border-radius: 20px;
+    color: white;
+   
+}
+h3{
+    color: yellowgreen;
+    font-weight: bolder;
+}
+.card3{
+    top: 150px;
+left: 540px;
+width: 440px;
+height: 400px;
+background: var(--unnamed-color-252c48) 0% 0% no-repeat padding-box;
+background: #252C48 0% 0% no-repeat padding-box;
+border-radius: 10px;
+opacity: 1;
+position: fixed;
+  }
+  .card4{
+    top: 150px;
+left: 1000px;
+width: 440px;
+height: 400px;
+background: var(--unnamed-color-252c48) 0% 0% no-repeat padding-box;
+background: #252C48 0% 0% no-repeat padding-box;
+border-radius: 10px;
+opacity: 1;
+position: fixed;
+  }
+  .card2{
+    top: 360px;
+left: 320px;
+width: 200px;
+height: 190px;
+background: var(--unnamed-color-252c48) 0% 0% no-repeat padding-box;
+background: #252C48 0% 0% no-repeat padding-box;
+border-radius: 10px;
+opacity: 1;
+position: fixed;
+  }
+  .card1{
+    top: 150px;
+left: 320px;
+width: 200px;
+height: 190px;
+background: var(--unnamed-color-252c48) 0% 0% no-repeat padding-box;
+background: #252C48 0% 0% no-repeat padding-box;
+border-radius: 10px;
+opacity: 1;
+position: fixed;
+  }
+  
+  .leadscount{
+ padding-top: 25px;
+ padding-left: 10px;
+width: 104px;
+height: 87px;
+color: var(--unnamed-color-fefefe);
+text-align: center;
+font: normal normal medium 62px/32px Poppins;
+font-size: 62px;
+letter-spacing: 1.24px;
+color: #FEFEFE;
+opacity: 1;
+  }
+  .totalleads{
+    padding-top: 10px;
+  
+width: 151px;
+height: 36px;
+color: var(--unnamed-color-00bc7c);
+text-align: center;
+font: normal normal 300 32px Poppins;
+font-size: 30px;
+letter-spacing: 0.52px;
+color: #00BC7C;
+    
+  }
+  .coldlead1{
+    padding-top: 25px;
+    padding-left: 10px;
+    
+width: 77px;
+height: 87px;
+color: var(--unnamed-color-fefefe);
+text-align: left;
+font: normal normal medium 62px/32px Poppins;
+letter-spacing: 1.24px;
+font-size: 62px;
+color: #FEFEFE;
+opacity: 1;
+  }
+  .coldlead2{
+    padding-top: 10px;
+    padding-left: 10px;
+width: 143px;
+height: 68px;
+color: var(--unnamed-color-ffbb00);
+text-align: left;
+font: normal normal 300 26px/32px Poppins;
+letter-spacing: 0.52px;
+font-size: 30px;
+color: #FFBB00;
+opacity: 1;
+  }

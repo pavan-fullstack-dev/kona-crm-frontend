@@ -1,0 +1,72 @@
+<body>
+    <div id="login">
+        <div id="text"class="name">Kona<span style="color: #E9204F;">digital.ai</span></div>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" method="post" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                            <div style="font-size: 30px;text-align: center;"class="login">Register</div>
+                            <div class="txt_field">
+                                <input type="text" style="color: whitesmoke;" formControlName="firstname" [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }" placeholder="First Name" required>
+                               
+                                
+                                <div *ngIf="submitted && f.firstname.errors" class="invalid-feedback">
+                                    <div *ngIf="f.firstname.errors.required">First Name is required</div>
+                                    <div *ngIf="f.firstname.errors.minlength">Minimum length should be 5 characters</div>
+                                    <!-- <div *ngIf="f.username.errors.userExist">username is same</div> -->
+                                </div>
+                            </div>
+                            <div class="txt_field">
+                                <input type="text" style="color: whitesmoke;" formControlName="lastname" [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }" placeholder="Last Name" required>
+                                <span></span>
+                                <label for=""></label>
+                                <div *ngIf="submitted && f.lastname.errors" class="invalid-feedback">
+                                    <div *ngIf="f.lastname.errors.required">Last Name is required</div>
+                                    <div *ngIf="f.lastname.errors.minlength">Minimum length should be 4 characters</div>
+                                    <!-- <div *ngIf="f.username.errors.userExist">username is same</div> -->
+                                </div>
+                            </div>
+                            <div class="txt_field">
+                                <input type="email" style="color: whitesmoke;" formControlName="emailId" [ngClass]="{ 'is-invalid': submitted && f.emailId.errors }" placeholder="Email Id" required>
+                                <span></span>
+                                <label for=""></label>
+                                <div *ngIf="submitted && f.emailId.errors" class="invalid-feedback">
+                                    <div *ngIf="f.emailId.errors.required">Email Id is required</div>
+                                    <div *ngIf="f.emailId.errors.pattern">Email should be valid</div>
+                                    <!-- <div *ngIf="f.username.errors.userExist">username is same</div> -->
+                                </div>
+                            </div>
+                            <div class="txt_field">
+                                <input type="tel" maxlength="10" style="color: whitesmoke;" formControlName="mobile" [ngClass]="{ 'is-invalid': submitted && f.mobile.errors }" placeholder="Mobile" required>
+                                <span></span>
+                                <label for=""></label>
+                                <div *ngIf="submitted && f.mobile.errors" class="invalid-feedback">
+                                    <div *ngIf="f.mobile.errors.required">Mobile no is required</div>
+                                    <div *ngIf="f.mobile.errors.pattern">Mobile no. should have 10 digits only</div>
+                                    <!-- <div *ngIf="f.username.errors.userExist">username is same</div> -->
+                                </div>
+                            </div>
+                         
+                            <div class="txt_field">
+                                <input type="password" style="color: whitesmoke;" formControlName="password"  [ngClass]="{ 'is-invalid': submitted && f.password.errors }" placeholder="Password" required>
+                                <span></span>
+                                <label for=""></label>
+                                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                    <div *ngIf="f.password.errors.required">Password is required</div>
+                                    <div *ngIf="f.password.errors.pattern">Password should be minimum 8 characters.<br>It must contain one uppercase.<br>One lowercase.<br>One number<br>One special character.</div>
+                                </div>
+                            </div>
+                          
+                            <input type="submit" value="Register">
+                           <div class="signup_link">
+                               <p>Have an account?</p>
+                               <div><a routerLink="/">Login</a></div>
+                           </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

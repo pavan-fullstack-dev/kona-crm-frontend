@@ -1,0 +1,5 @@
+.dropdown-item:hover{
+    background-color: #252C48;
+    color: white;
+    border-radius: 10px;
+  }
